@@ -3,7 +3,7 @@ import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
-  <div class="flex justify-center h-50 items-center bg-teal-100 space-x-4 m-10 rounded-lg p-4">
+  <div class="flex justify-center h-50 items-center border-s-green-300 space-x-4 m-10 rounded-lg p-4">
     <div class="text-purple-700">This is my vue world wonderful! Testing11!!!!!!!!</div>
     <div class="text-green-700">This is going to be great!</div>
     <div class="text-orange-700">This is what I wanted!</div>
