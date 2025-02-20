@@ -4,7 +4,7 @@ import HelloWorld from './components/HelloWorld.vue'
 
 <template>
   <div class="flex justify-center h-50 items-center bg-gray-200 space-x-4 m-4 rounded-lg p-4">
-    <div class="text-purple-700">This is my vue world wonderful! Testing5!!!!</div>
+    <div class="text-purple-700">This is my vue world wonderful! Testing6!!!!!!</div>
     <div class="text-green-700">This is going to be great!</div>
     <div class="text-orange-700">This is what I wanted!</div>
   </div>
