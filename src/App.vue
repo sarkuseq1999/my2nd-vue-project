@@ -7,7 +7,7 @@
 
 <div id="app">
         <NavBar />
-      </div>
+</div>
 
   <div class="flex justify-center h-50 items-center bg-amber-400 border-s-green-300 space-x-4 m-2 rounded-lg p-4">
     <div class="text-purple-700">This is my vue world wonderful! Testing12!!!!!!!!</div>
