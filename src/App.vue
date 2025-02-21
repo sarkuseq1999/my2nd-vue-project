@@ -1,10 +1,12 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+
+
 </script>
 
 <template>
+
   <div class="flex justify-center h-50 items-center bg-amber-400 border-s-green-300 space-x-4 m-2 rounded-lg p-4">
-    <div class="text-purple-700">This is my vue world wonderful! Testing11!!!!!!!!</div>
+    <div class="text-purple-700">This is my vue world wonderful! Testing12!!!!!!!!</div>
     <div class="text-green-700">This is going to be great!</div>
     <div class="text-orange-700">This is what I wanted!</div>
   </div>
