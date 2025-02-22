@@ -1,5 +1,6 @@
 <script setup>
-    import NavBar from './components/NavBar.vue'
+    import BottomCopyrightText from './components/BottomCopyrightText.vue';
+import NavBar from './components/NavBar.vue'
     
 </script>
 
@@ -28,6 +29,10 @@
   <div class="bg-blue-500 text-white p-6 flex-1 text-center">Item 1</div>
   <div class="bg-green-500 text-white p-6 flex-1 text-center">Item 2</div>
   <div class="bg-red-500 text-white p-6 flex-1 text-center">Item 3</div>
+</div>
+
+<div>
+  <BottomCopyrightText />
 </div>
 
 </template>
