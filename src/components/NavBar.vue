@@ -65,7 +65,7 @@ const toggleMobileDropdown = () => {
 
       <!-- Desktop Menu -->
       <ul class="hidden md:flex space-x-6">
-        <li><a href="#" class="hover:text-yellow-400 transition-colors">Home</a></li>
+        <li><router-link to="/" class="hover:text-yellow-400 transition-colors">Home</router-link></li>
 
         <!-- ✅ Dropdown for Desktop -->
         <li class="relative group"
@@ -101,7 +101,7 @@ const toggleMobileDropdown = () => {
           </div>
         </li>
 
-        <li><a href="#" class="hover:text-yellow-400 transition-colors">About</a></li>
+        <li><router-link to="/about" class="hover:text-yellow-400 transition-colors">About</router-link></li>
         <li><a href="#" class="hover:text-yellow-400 transition-colors">Support</a></li>
       </ul>
 
@@ -152,10 +152,7 @@ const toggleMobileDropdown = () => {
   </nav>
 
   <!-- Example long content to see sticky effect -->
-  <div class="h-[2000px] p-10">
-    <h2 class="text-3xl font-bold mb-4">Scroll down to see the transparent menu!</h2>
-    <p>This is just some long content for testing the sticky navigation bar. Keep scrolling to see the menu become transparent.</p>
-  </div>
+
 </template>
 
 <style scoped>
