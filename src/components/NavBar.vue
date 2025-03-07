@@ -23,12 +23,12 @@ const cancelClose = () => {
   clearTimeout(closeTimeout);
 };
 
-// Track scroll position to control transparency
+// Track scroll position to control transparency and position
 const isScrolled = ref(false);
 
 // Check if page is scrolled
 const handleScroll = () => {
-  isScrolled.value = window.scrollY > 0; // True when page is scrolled
+  isScrolled.value = window.scrollY > 40; // Moves navbar to top after scrolling past top bar
 };
 
 // Set up event listeners when component is mounted
@@ -58,10 +58,19 @@ const toggleMobileDropdown = () => {
 </script>
 
 <template>
-  <!-- ✅ Sticky Navigation Menu with Transparent Effect -->
-  <nav :class="['p-4 shadow-lg sticky top-0 z-50 transition-all duration-300', isScrolled ? 'bg-blue-600/50 backdrop-blur-md' : 'bg-white-600']">
+  <!-- ✅ Navigation Menu that moves to the very top on scroll -->
+  <nav 
+    :class="[
+      'p-4 shadow-lg fixed w-full z-50 transition-all duration-300', 
+      isScrolled ? 'top-0 bg-blue-200 bg-opacity-50 backdrop-blur-md' : 'top-[40px] bg-white'
+    ]">
+    
     <div class="container mx-auto flex justify-between items-center">
-      <h1 class="text-2xl font-bold">My Fancy Site</h1>
+      
+      <!-- ✅ Logo -->
+      <router-link to="/">
+        <img src="/logo_black.png" alt="Site Logo" class="h-15 ml-4">
+      </router-link>
 
       <!-- Desktop Menu -->
       <ul class="hidden md:flex space-x-6">
@@ -117,42 +126,10 @@ const toggleMobileDropdown = () => {
         </button>
       </div>
     </div>
-
-    <!-- ✅ Mobile Menu -->
-    <transition name="mobile-menu">
-      <div v-if="isMobileMenuOpen" class="md:hidden bg-blue-600/90 text-white p-4">
-        <ul class="space-y-4">
-          <li><a href="#" class="block hover:text-yellow-400" @click="closeMobileMenu">Home</a></li>
-          <li>
-            <button @click="toggleMobileDropdown" class="w-full text-left hover:text-yellow-400">Products</button>
-            <transition name="dropdown">
-              <div v-if="isMobileDropdownOpen" class="grid grid-cols-1 gap-4 p-2">
-                <div class="flex items-center space-x-4 p-2 rounded-lg hover:bg-gray-200 transition-colors cursor-pointer">
-                  <img src="https://via.placeholder.com/50" alt="Product 1" class="rounded-lg">
-                  <a href="#" class="text-gray-700 font-semibold" @click="closeMobileMenu">Product 1</a>
-                </div>
-
-                <div class="flex items-center space-x-4 p-2 rounded-lg hover:bg-gray-200 transition-colors cursor-pointer">
-                  <img src="https://via.placeholder.com/50" alt="Product 2" class="rounded-lg">
-                  <a href="#" class="text-gray-700 font-semibold" @click="closeMobileMenu">Product 2</a>
-                </div>
-
-                <div class="flex items-center space-x-4 p-2 rounded-lg hover:bg-gray-200 transition-colors cursor-pointer">
-                  <img src="https://via.placeholder.com/50" alt="Product 3" class="rounded-lg">
-                  <a href="#" class="text-gray-700 font-semibold" @click="closeMobileMenu">Product 3</a>
-                </div>
-              </div>
-            </transition>
-          </li>
-          <li><a href="#" class="block hover:text-yellow-400" @click="closeMobileMenu">About</a></li>
-          <li><a href="#" class="block hover:text-yellow-400" @click="closeMobileMenu">Support</a></li>
-        </ul>
-      </div>
-    </transition>
   </nav>
 
-  <!-- Example long content to see sticky effect -->
-
+  <!-- ✅ Push down content so it’s not hidden under fixed navbar -->
+  <div class="h-[80px]"></div>
 </template>
 
 <style scoped>
@@ -174,6 +151,10 @@ const toggleMobileDropdown = () => {
   transform: translateY(-20px);
 }
 </style>
+
+
+
+
 
 
 
