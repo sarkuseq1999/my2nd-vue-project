@@ -59,7 +59,7 @@ const toggleMobileDropdown = () => {
 
 <template>
   <!-- ✅ Sticky Navigation Menu with Transparent Effect -->
-  <nav :class="['p-4 shadow-lg sticky top-0 z-50 transition-all duration-300', isScrolled ? 'bg-blue-600/50 backdrop-blur-md' : 'bg-blue-600']">
+  <nav :class="['p-4 shadow-lg sticky top-0 z-50 transition-all duration-300', isScrolled ? 'bg-blue-600/50 backdrop-blur-md' : 'bg-white-600']">
     <div class="container mx-auto flex justify-between items-center">
       <h1 class="text-2xl font-bold">My Fancy Site</h1>
 
