@@ -13,10 +13,10 @@ import loginsignup_en from '../components/loginsignup_en.vue';
   </div>
 
   <!-- Top Section -->
-  <section class="h-screen border-2 flex items-center text-center opacity-90 bg-cover bg-center bg-no-repeat bg-[url('/images/bg_2.jpg')]">
+  <section class="h-screen bg-cover bg-center bg-no-repeat bg-[url('/images/bg_2.jpg')]">
     <div class="w-1/3 mx-auto">
-      <h1 class="text-8xl font-bold text-white">BiGH</h1>
-      <p class="mt-2 text-3xl text-white">Your top choice for longevity and healthy aging.</p>
+      <h1 class="text-8xl font-bold text-black_300">BiGH</h1>
+      <p class="mt-2 text-3xl text-black-300">Your top choice for longevity and healthy aging.</p>
     </div>
   </section>
 
