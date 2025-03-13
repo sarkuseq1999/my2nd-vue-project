@@ -62,7 +62,7 @@ const toggleMobileDropdown = () => {
   <nav 
     :class="[
       'p-4 shadow-lg fixed w-full z-50 transition-all duration-300 border-2', 
-      isScrolled ? 'top-0 bg-blue-200 bg-opacity-50 backdrop-blur-md' : 'top-[40px] bg-blue-200'
+      isScrolled ? 'top-0 bg-blue-200/20' : 'top-[40px] bg-blue-200'
     ]">
     
     <div class="container mx-auto flex justify-between items-center">
