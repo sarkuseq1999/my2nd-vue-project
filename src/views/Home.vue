@@ -32,6 +32,54 @@ import loginsignup_en from '../components/loginsignup_en.vue';
 </section>
 
 
+<!-- 22 Years of existence section -->
+<section class="relative flex items-center justify-center h-[500px] bg-cover bg-center bg-no-repeat" style="background-image: url('/images/22yrs.jpg');">
+    
+    <!-- Overlay for Readability -->
+    <div class="absolute inset-0 bg-black opacity-20"></div>
+
+    <!-- Content Container (Flexbox) -->
+    <div class="relative z-10 flex flex-col md:flex-row w-full h-full px-6 md:px-12">
+      
+      <!-- Left Empty Space (Pushes Text to the Right) -->
+      <div class="md:w-1/2"></div>
+
+      <!-- Right Half - Text -->
+      <div class="md:w-1/2 flex flex-col justify-center text-white text-center md:text-left space-y-4">
+        <h1 class="text-5xl font-bold">22 Years of Excellence</h1>
+        <p class="text-2xl">
+          For 22 years, our products have enriched lives with unmatched quality and reliability from all over the world. Join the thousands who trust us!
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+<!-- Top Quality Ingredients Section -->
+<section class="bg-white flex flex-col md:flex-row items-center justify-between">
+    
+    <!-- Left Half (Text Content) -->
+    <div class="md:w-1/2 text-gray-900 text-center md:text-left space-y-4 px-10">
+      <h1 class="text-4xl font-bold">Highest Quality Ingredients</h1>
+      <p class="text-lg leading-relaxed">
+        We carefully pick our ingredients from areas of the world most suitable for their natural growth, 
+        such as Deer Horn Shaped Red Reishi from Hokkaido, Japan.
+      </p>
+    </div>
+
+    <!-- Right Half (Background Image) -->
+    <div class="md:w-1/2 h-[400px] md:h-full flex items-end">
+  <div class="bg-[url('/images/ingredients2.png')] bg-cover bg-no-repeat h-[400px] w-full"></div>
+</div>
+
+
+
+
+
+  </section>
+
+
+
 
 
 </template>
