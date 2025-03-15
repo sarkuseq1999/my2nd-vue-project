@@ -56,25 +56,22 @@ import loginsignup_en from '../components/loginsignup_en.vue';
   </section>
 
 <!-- Top Quality Ingredients Section -->
-<section class="bg-white flex flex-col md:flex-row items-center justify-between">
+<section class="relative bg-white flex h-[500px]">
     
     <!-- Left Half (Text Content) -->
-    <div class="md:w-1/2 text-gray-900 text-center md:text-left space-y-4 px-10">
-      <h1 class="text-4xl font-bold">Highest Quality Ingredients</h1>
-      <p class="text-lg leading-relaxed">
-        We carefully pick our ingredients from areas of the world most suitable for their natural growth, 
-        such as Deer Horn Shaped Red Reishi from Hokkaido, Japan.
-      </p>
-    </div>
-
-    <!-- Right Half (Background Image) -->
-    <div class="md:w-1/2 h-[400px] md:h-full flex items-end">
-  <div class="bg-[url('/images/ingredients2.png')] bg-cover bg-no-repeat h-[400px] w-full"></div>
+    <div class="relative w-1/2 flex flex-col items-center justify-center text-gray-900 text-center h-full">
+    <h1 class="text-4xl font-bold">Highest Quality Ingredients</h1>
+    <p class="text-lg leading-relaxed">
+    We carefully pick our ingredients from areas of the world most suitable for their natural growth, 
+    such as Deer Horn Shaped Red Reishi from Hokkaido, Japan.
+  </p>
 </div>
 
-
-
-
+    <!-- Right Half (Container for Absolute Image) -->
+    <div class="relative w-1/2 ">
+      <!-- Image Positioned at the Bottom -->
+      <img src="/images/ingredients2.png" alt="Ingredients" class="absolute bottom-0 left-15">
+    </div>
 
   </section>
 
