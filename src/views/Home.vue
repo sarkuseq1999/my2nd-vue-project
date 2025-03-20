@@ -12,7 +12,7 @@ const bighText = ref(null);
 onMounted(() => {
   gsap.from(bighText.value, {
     opacity: 0,   // Starts fully invisible
-    x: -200,        // Moves up from 50px
+    x: -1000,        // Moves up from 50px
     duration: 2,  // Takes 1 second
     ease: 'power2.out' // Smooth easing effect
   });
