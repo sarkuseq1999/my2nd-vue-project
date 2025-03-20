@@ -61,8 +61,8 @@ const toggleMobileDropdown = () => {
   <!-- ✅ Navigation Menu that moves to the very top on scroll -->
   <nav 
     :class="[
-      'p-4 shadow-lg fixed w-full z-50 transition-all duration-300 border-2', 
-      isScrolled ? 'top-0 bg-blue-200/20' : 'top-[40px] bg-blue-200'
+      'p-4 shadow-lg fixed w-full z-50 transition-all duration-300', 
+      isScrolled ? 'top-0 bg-blue-200/20' : 'top-[40px] bg-blue-200/80'
     ]">
     
     <div class="container mx-auto flex justify-between items-center">
