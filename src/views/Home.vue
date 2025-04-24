@@ -21,32 +21,32 @@ onMounted(() => {
 
 <template>
 
-  <!-- Top Section with Background -->
-  <section class="relative h-screen flex flex-col w-full items-center bg-cover bg-[url('/images/bg_2.jpg')]">
-    
+<!-- Very Top Section -->
+<section class="relative h-[800px] flex flex-col w-full items-start bg-cover bg-[url('/images/bg_2.jpg')]">
+  
   <!-- Absolute Container for Navbar & LoginSignup -->
-<div class="absolute top-0 left-0 w-full z-20">
-  <loginsignup_en />
-  <NavBar />
-</div>
+  <div class="absolute top-0 left-0 w-full z-20">
+    <loginsignup_en />
+    <NavBar />
+  </div>
+
+  <!-- Hero Content Inside Background -->
+  <div class="w-1/3 ml-12 mt-80 text-left">
+    <h1 ref="bighText" class="text-5xl font-bold text-white">Recharge Your Cells. Restore Your Youth.</h1>
+    <p class="mt-2 text-2xl text-white">Support your body at it's core --your mitochondria-- to boost energy, slow aging, and enjoy life</p>
+  </div>
+
+</section>
 
 
-    <!-- Hero Content Inside Background -->
-    <div class="w-1/3 mx-12 text-center mt-32">
-      <h1 ref="bighText" class="text-8xl font-bold text-white">BiGH</h1>
-      <p class="mt-2 text-3xl text-white">Your top choice for longevity and healthy aging.</p>
-    </div>
-
-  </section>
-
-  <!-- Bottom Section -->
-  <section class="relative z-20 flex items-center justify-center h-[500px] bg-cover bg-center bg-no-repeat" style="background-image: url('/images/testingsection1.png');">
+<!-- Bottom Section -->
+  <section class="relative z-20 flex items-center text-gray-800 justify-center h-[500px] bg-cover bg-center bg-no-repeat">
       Bottom Section
 
   </section>
 
   <!-- 22 Years of Excellence Section -->
-  <section class="relative z-10 -mt-20 flex items-center justify-center h-[500px] bg-cover bg-center bg-no-repeat" style="background-image: url('/images/22yrs.jpg');">
+  <section class="relative z-10 flex items-center justify-center h-[500px] bg-cover bg-center bg-no-repeat" style="background-image: url('/images/22yrs.jpg');">
       
       <!-- Overlay for Readability -->
       <div class="absolute inset-0 bg-black opacity-20"></div>
