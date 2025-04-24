@@ -20,30 +20,106 @@ onMounted(() => {
 </script>
 
 <template>
-
-<!-- Very Top Section -->
-<section class="relative h-[800px] flex flex-col w-full items-start bg-cover bg-[url('/images/bg_2.jpg')]">
-  
   <!-- Absolute Container for Navbar & LoginSignup -->
-  <div class="absolute top-0 left-0 w-full z-20">
+  <div class="relative top-0 left-0 w-full z-20">
     <loginsignup_en />
     <NavBar />
   </div>
+<!-- Very Top Section -->
+<section class="relative h-[800px] flex flex-col w-full items-start bg-cover bg-[url('/images/humancell.jpg')]">
+  
 
   <!-- Hero Content Inside Background -->
   <div class="w-1/3 ml-12 mt-80 text-left">
     <h1 ref="bighText" class="text-5xl font-bold text-white">Recharge Your Cells. Restore Your Youth.</h1>
     <p class="mt-2 text-2xl text-white">Support your body at it's core --your mitochondria-- to boost energy, slow aging, and enjoy life</p>
+    <button
+  @click="scrollToProducts"
+  class="my-5 px-6 py-3 text-white border border-white bg-transparent text-lg font-semibold rounded-2xl hover:bg-white hover:text-black transition duration-300"
+>
+  Shop the Collection
+</button>
+
+  
   </div>
 
 </section>
 
 
-<!-- Bottom Section -->
-  <section class="relative z-20 flex items-center text-gray-800 justify-center h-[500px] bg-cover bg-center bg-no-repeat">
-      Bottom Section
+<!-- Why BiGH Section -->
+<section class="flex flex-col items-center px-6 py-20 bg-white">
+  <p class="max-w-2xl text-xl md:text-6xl font-medium text-gray-900 mb-6 text-left">
+    “We believe healthy aging starts deep inside—where energy is made and damage begins.”
+  </p>
+  <p class="italic max-w-2xl text-lg md:text-2xl text-gray-700 mb-4 text-left">
+    Our products target the real source of aging: your cells' ability to function, repair, and thrive. By restoring mitochondrial health and shielding against daily damage, we help you live younger, longer.
+  </p>
 
-  </section>
+  <!-- Left-aligned button inside same width container -->
+  <div class="max-w-2xl w-full text-center">
+    <button
+      class="mt-8 px-8 py-3 text-lg font-semibold text-black bg-white border border-black rounded-2xl shadow hover:bg-gray-100 transition duration-300"
+    >
+      Learn More About BiGH
+    </button>
+  </div>
+</section>
+
+
+<!-- Why We Age Section -->
+<section class="flex flex-col items-center px-6 py-24 bg-[url('/images/mito1.jpg')] bg-cover bg-center bg-no-repeat">
+  <div class="max-w-3xl w-full text-left">
+    <h2 class="text-5xl md:text-6xl font-bold text-white mb-10 leading-tight">
+      Why Do We Age?
+    </h2>
+    <p class="italic text-2xl md:text-3xl text-white mb-15 leading-relaxed">
+      Aging is a natural process — but scientists now believe it’s not just about time. At the cellular level, aging happens when our cells can no longer function, repair, or protect themselves the way they used to.
+    </p>
+
+    <h3 class="text-5xl font-bold text-white mb-6">
+      The Mitochondrial Theory of Aging
+    </h3>
+    <p class="italic text-2xl md:text-3xl text-white mb-10 leading-relaxed">
+      Mitochondria are the power plants inside your cells. They make the energy that keeps you alive and active. But over time, mitochondria get damaged by stress, toxins, and everyday wear — leading to lower energy and more cell breakdown.
+    </p>
+
+    <button
+      class="px-10 py-4 text-xl font-semibold text-white border border-white bg-transparent rounded-2xl hover:bg-white hover:text-black transition duration-300"
+    >
+      Learn More
+    </button>
+  </div>
+</section>
+
+<!-- Made in California and GMP Certified -->
+<section class="flex flex-wrap w-full">
+  <!-- Left Column: Made in California -->
+  <div class="w-1/2 aspect-square bg-cover bg-center" style="background-image: url('/images/madeincalifornia.jpg');">
+  </div>
+
+  <!-- Right Column: GMP Certified -->
+  <div class="w-1/2 aspect-square bg-cover bg-center" style="background-image: url('/images/gmpcertified2.jpg');">
+  </div>
+</section>
+
+
+<!-- Science-Based Formulation Section -->
+<section class="w-full bg-white py-16 px-6 text-center">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="text-6xl md:text-7xl font-bold text-gray-900 mb-6">
+      Science-Driven Formulation
+    </h2>
+    <p class="italic text-2xl md:text-2xl text-gray-700 leading-relaxed">
+      Our mitochondrial health supplements are meticulously formulated by real scientists and researchers 
+      who specialize in cellular biology, longevity, and bioenergetics. Each ingredient is backed by scientific 
+      research and chosen to support your body’s energy production, resilience, and healthy aging at the 
+      cellular level.
+    </p>
+  </div>
+</section>
+
+
+
 
   <!-- 22 Years of Excellence Section -->
   <section class="relative z-10 flex items-center justify-center h-[500px] bg-cover bg-center bg-no-repeat" style="background-image: url('/images/22yrs.jpg');">
@@ -68,25 +144,28 @@ onMounted(() => {
       </div>
   </section>
 
-  <!-- Top Quality Ingredients Section -->
-  <section class="relative bg-white flex h-[500px]">
-      
-      <!-- Left Half (Text Content) -->
-      <div class="relative w-1/2 flex flex-col items-center justify-center text-gray-900 text-center h-full">
-        <h1 class="text-4xl font-bold">Highest Quality Ingredients</h1>
-        <p class="text-lg leading-relaxed">
-          We carefully pick our ingredients from areas of the world most suitable for their natural growth, 
-          such as Deer Horn Shaped Red Reishi from Hokkaido, Japan.
-        </p>
-      </div>
 
-      <!-- Right Half (Container for Absolute Image) -->
-      <div class="relative w-1/2">
-        <!-- Image Positioned at the Bottom -->
-        <img src="/images/ingredients2.png" alt="Ingredients" class="absolute bottom-0 left-15">
-      </div>
+  <!-- Highest Quality Ingredients Section -->
+<section class="bg-white py-16 px-6 text-center">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+      Sourced from Nature’s Best
+    </h2>
+    <p class="text-lg md:text-xl text-gray-700 leading-relaxed">
+      We believe that quality starts at the source. That’s why we go the extra mile to find ingredients 
+      from regions around the world where they grow best — in their most natural, nutrient-rich form.
+    </p>
+    <p class="mt-6 text-md md:text-lg text-gray-600">
+      For example, we use <strong>Deer Horn Shaped Reishi</strong> from the pristine forests of 
+      <strong>Hokkaido, Japan</strong> and <strong>Green Bee Propolis</strong> from the lush rainforests of <strong>Brazil</strong>, 
+      both chosen for their unmatched purity and potency.
+    </p>
+  </div>
+</section>
 
-  </section>
+
+
+
 
 </template>
 
