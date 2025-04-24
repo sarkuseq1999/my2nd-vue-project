@@ -32,7 +32,7 @@ onMounted(() => {
   <!-- Hero Content Inside Background -->
   <div class="w-1/3 ml-12 mt-80 text-left">
     <h1 ref="bighText" class="text-5xl font-bold text-white">Recharge Your Cells. Restore Your Youth.</h1>
-    <p class="mt-2 text-2xl text-white">Support your body at it's core --your mitochondria-- to boost energy, slow aging, and enjoy life</p>
+    <p class="mt-2 text-2xl text-white">Support your body at it's core --your mitochondria-- to boost energy, slow aging, and enjoy life.</p>
     <button
   @click="scrollToProducts"
   class="my-5 px-6 py-3 text-white border border-white bg-transparent text-lg font-semibold rounded-2xl hover:bg-white hover:text-black transition duration-300"
@@ -91,6 +91,29 @@ onMounted(() => {
   </div>
 </section>
 
+
+
+
+<!-- Science-Based Formulation Section -->
+<section class="w-full bg-white py-16 px-6 text-center">
+  <div class="max-w-4xl mx-auto">
+
+
+    <h2 class="text-6xl md:text-7xl font-bold text-gray-900 mb-6">
+      Science-Driven Formulation
+    </h2>
+    <p class="italic text-2xl md:text-2xl text-gray-700 leading-relaxed">
+      Our mitochondrial health supplements are meticulously formulated by real scientists and researchers 
+      who specialize in cellular biology, longevity, and bioenergetics. Each ingredient is backed by scientific 
+      research and chosen to support your body’s energy production, resilience, and healthy aging at the 
+      cellular level.
+    </p>
+  </div>
+</section>
+
+
+
+
 <!-- Made in California and GMP Certified -->
 <section class="flex flex-wrap w-full">
   <!-- Left Column: Made in California -->
@@ -103,20 +126,26 @@ onMounted(() => {
 </section>
 
 
-<!-- Science-Based Formulation Section -->
-<section class="w-full bg-white py-16 px-6 text-center">
+  <!-- Highest Quality Ingredients Section -->
+  <section class="bg-white py-16 px-6 text-center">
   <div class="max-w-4xl mx-auto">
-    <h2 class="text-6xl md:text-7xl font-bold text-gray-900 mb-6">
-      Science-Driven Formulation
+    <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+      Sourced from Nature’s Best
     </h2>
-    <p class="italic text-2xl md:text-2xl text-gray-700 leading-relaxed">
-      Our mitochondrial health supplements are meticulously formulated by real scientists and researchers 
-      who specialize in cellular biology, longevity, and bioenergetics. Each ingredient is backed by scientific 
-      research and chosen to support your body’s energy production, resilience, and healthy aging at the 
-      cellular level.
+    <p class="text-lg md:text-xl text-gray-700 leading-relaxed">
+      We believe that quality starts at the source. That’s why we go the extra mile to find ingredients 
+      from regions around the world where they grow best — in their most natural, nutrient-rich form.
+    </p>
+    <p class="mt-6 text-md md:text-lg text-gray-600">
+      For example, we use <strong>Deer Horn Shaped Reishi</strong> from the pristine forests of 
+      <strong>Hokkaido, Japan</strong> and <strong>Green Bee Propolis</strong> from the lush rainforests of <strong>Brazil</strong>, 
+      both chosen for their unmatched purity and potency.
     </p>
   </div>
 </section>
+
+
+
 
 
 
@@ -145,23 +174,7 @@ onMounted(() => {
   </section>
 
 
-  <!-- Highest Quality Ingredients Section -->
-<section class="bg-white py-16 px-6 text-center">
-  <div class="max-w-4xl mx-auto">
-    <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-      Sourced from Nature’s Best
-    </h2>
-    <p class="text-lg md:text-xl text-gray-700 leading-relaxed">
-      We believe that quality starts at the source. That’s why we go the extra mile to find ingredients 
-      from regions around the world where they grow best — in their most natural, nutrient-rich form.
-    </p>
-    <p class="mt-6 text-md md:text-lg text-gray-600">
-      For example, we use <strong>Deer Horn Shaped Reishi</strong> from the pristine forests of 
-      <strong>Hokkaido, Japan</strong> and <strong>Green Bee Propolis</strong> from the lush rainforests of <strong>Brazil</strong>, 
-      both chosen for their unmatched purity and potency.
-    </p>
-  </div>
-</section>
+
 
 
 
