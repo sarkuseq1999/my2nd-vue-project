@@ -1,7 +1,7 @@
 <script setup>
 import NavBar from '../components/NavBar.vue';
 import loginsignup_en from '../components/loginsignup_en.vue';
-import { onMounted, ref } from 'vue';
+import { onMounted, ref, nextTick } from 'vue';
 import gsap from 'gsap';
 
 const bighText = ref(null);
@@ -52,9 +52,38 @@ onMounted(() => {
       });
     }
   }, 300);
-});
 
+  nextTick(() => {
+    function animateBee(selector) {
+      const bee = document.querySelector(selector);
+      const section = bee.parentElement;
+
+      const animate = () => {
+        const beeWidth = bee.offsetWidth;
+        const beeHeight = bee.offsetHeight;
+        const padding = 20; // Padding to prevent going outside
+        const maxX = section.offsetWidth - beeWidth - padding;
+        const maxY = section.offsetHeight - beeHeight - padding;
+
+        gsap.to(bee, {
+          x: gsap.utils.random(padding, maxX),
+          y: gsap.utils.random(padding, maxY),
+          rotation: gsap.utils.random(-20, 20),
+          duration: gsap.utils.random(4, 6),
+          ease: 'sine.inOut',
+          onComplete: animate
+        });
+      };
+
+      animate();
+    }
+
+    animateBee('.bee-left');
+    animateBee('.bee-right');
+  });
+});
 </script>
+
 
 
 
@@ -147,19 +176,18 @@ onMounted(() => {
 
 
 
-<!-- Science-Based Formulation Section -->
-<section class="relative w-full bg-white py-16 px-6 text-center overflow-hidden">
-  <div id="particles-js" class="absolute inset-0 z-0"></div>
-
-  <div class="relative max-w-4xl mx-auto z-10">
-    <h2 class="text-6xl md:text-7xl font-bold text-gray-900 mb-6">
-      Science-Driven Formulation
-    </h2>
-    <p class="italic text-2xl md:text-2xl text-gray-700 leading-relaxed">
-      Our mitochondrial health supplements are meticulously formulated by real scientists and researchers who specialize in cellular biology, longevity, and bioenergetics. Each ingredient is backed by scientific research and chosen to support your body’s energy production, resilience, and healthy aging at the cellular level.
-    </p>
-  </div>
-</section>
+  <!-- Science-Based Formulation Section -->
+  <section class="relative w-full bg-white py-30 px-6 text-center overflow-hidden">
+    <div id="particles-js" class="absolute inset-0 z-0"></div>
+    <div class="relative max-w-4xl mx-auto z-20">
+      <h2 class="text-6xl md:text-7xl font-bold text-gray-900 mb-6">
+        Science-Driven Formulation
+      </h2>
+      <p class="italic text-3xl md:text-3xl text-gray-700 leading-relaxed">
+        Our mitochondrial health supplements are meticulously formulated by real scientists and researchers who specialize in cellular biology, longevity, and bioenergetics. Each ingredient is backed by scientific research and chosen to support your body’s energy production, resilience, and healthy aging at the cellular level.
+      </p>
+    </div>
+  </section>
 
 
 
@@ -184,22 +212,25 @@ onMounted(() => {
 
 
   <!-- Highest Quality Ingredients Section -->
-  <section class="bg-white py-16 px-6 text-center">
-  <div class="max-w-4xl mx-auto">
-    <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-      Sourced from Nature’s Best
-    </h2>
-    <p class="text-lg md:text-xl text-gray-700 leading-relaxed">
-      We believe that quality starts at the source. That’s why we go the extra mile to find ingredients 
-      from regions around the world where they grow best — in their most natural, nutrient-rich form.
-    </p>
-    <p class="mt-6 text-md md:text-lg text-gray-600">
-      For example, we use <strong>Deer Horn Shaped Reishi</strong> from the pristine forests of 
-      <strong>Hokkaido, Japan</strong> and <strong>Green Bee Propolis</strong> from the lush rainforests of <strong>Brazil</strong>, 
-      both chosen for their unmatched purity and potency.
-    </p>
-  </div>
-</section>
+  <section class="relative bg-white py-25 px-6 text-center overflow-hidden">
+    <img src="/images/bee1.png" alt="Bee" class="bee-animation bee-left absolute w-12 z-10 pointer-events-none" style="top: 50%; left: 5%; transform: translateY(-50%);" />
+    <img src="/images/bee1.png" alt="Bee" class="bee-animation bee-right absolute w-12 z-10 pointer-events-none" style="top: 50%; right: 5%; transform: translateY(-50%);" />
+
+    <div class="max-w-4xl mx-auto relative z-20">
+      <h2 class="text-7xl md:text-6xl font-bold text-gray-900 mb-6">
+        Sourced from Nature’s Best
+      </h2>
+      <p class="italic text-3xl md:text-3xl text-gray-700 leading-relaxed">
+        We believe that quality starts at the source. That’s why we go the extra mile to find ingredients 
+        from regions around the world where they grow best — in their most natural, nutrient-rich form.
+      </p>
+      <p class="italic mt-6 text-3xl md:text-3xl text-gray-600 leading-relaxed">
+        For example, we use <strong>Deer Horn Shaped Reishi</strong> from the pristine forests of 
+        <strong>Hokkaido, Japan</strong> and <strong>Green Bee Propolis</strong> from the lush rainforests of <strong>Brazil</strong>, 
+        both chosen for their unmatched purity and potency.
+      </p>
+    </div>
+  </section>
 
 
 
