@@ -1,23 +1,63 @@
 <script setup>
 import NavBar from '../components/NavBar.vue';
 import loginsignup_en from '../components/loginsignup_en.vue';
-
-
 import { onMounted, ref } from 'vue';
 import gsap from 'gsap';
 
-// Reference to the "BiGH" text element
 const bighText = ref(null);
 
 onMounted(() => {
   gsap.from(bighText.value, {
-    opacity: 0,   // Starts fully invisible
-    x: -1000,        // Moves up from 50px
-    duration: 2,  // Takes 1 second
-    ease: 'power2.out' // Smooth easing effect
+    opacity: 0,
+    x: -1000,
+    duration: 2,
+    ease: 'power2.out'
   });
+
+  setTimeout(() => {
+    if (window.particlesJS) {
+      particlesJS('particles-js', {
+        "particles": {
+          "number": { "value": 80, "density": { "enable": true, "value_area": 800 }},
+          "color": { "value": "#9CA3AF" },
+          "shape": { "type": "circle" },
+          "opacity": { "value": 1.5, "random": true },
+          "size": { "value": 3, "random": true },
+          "line_linked": {
+            "enable": true,
+            "distance": 120,
+            "color": "#D1D5DB",
+            "opacity": 0.4,
+            "width": 1
+          },
+          "move": {
+            "enable": true,
+            "speed": 1.5,
+            "direction": "none",
+            "random": true,
+            "straight": false,
+            "out_mode": "out",
+            "bounce": false
+          }
+        },
+        "interactivity": {
+          "detect_on": "canvas",
+          "events": {
+            "onhover": { "enable": false },
+            "onclick": { "enable": false },
+            "resize": true
+          }
+        },
+        "retina_detect": true
+      });
+    }
+  }, 300);
 });
+
 </script>
+
+
+
 
 <template>
   <!-- Absolute Container for Navbar & LoginSignup -->
@@ -25,25 +65,38 @@ onMounted(() => {
     <loginsignup_en />
     <NavBar />
   </div>
+
+
+
 <!-- Very Top Section -->
-<section class="relative h-[800px] flex flex-col w-full items-start bg-cover bg-[url('/images/humancell.jpg')]">
-  
+<section class="relative h-[800px] flex flex-col w-full items-start overflow-hidden">
 
-  <!-- Hero Content Inside Background -->
-  <div class="w-1/3 ml-12 mt-80 text-left">
+  <!-- Video Background -->
+  <video 
+    autoplay 
+    muted 
+    loop 
+    playsinline 
+    class="absolute top-0 left-0 w-full h-full object-cover z-0"
+  >
+    <source src="/videos/cell1.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Hero Content Inside Video -->
+  <div class="relative w-1/3 ml-12 mt-80 text-left z-10">
     <h1 ref="bighText" class="text-5xl font-bold text-white">Recharge Your Cells. Restore Your Youth.</h1>
-    <p class="mt-2 text-2xl text-white">Support your body at it's core --your mitochondria-- to boost energy, slow aging, and enjoy life.</p>
+    <p class="mt-2 text-2xl text-white">Support your body at its core -- your mitochondria -- to boost energy, slow aging, and enjoy life.</p>
     <button
-  @click="scrollToProducts"
-  class="my-5 px-6 py-3 text-white border border-white bg-transparent text-lg font-semibold rounded-2xl hover:bg-white hover:text-black transition duration-300"
->
-  Shop the Collection
-</button>
-
-  
+      @click="scrollToProducts"
+      class="my-5 px-6 py-3 text-white border border-white bg-transparent text-lg font-semibold rounded-2xl hover:bg-white hover:text-black transition duration-300"
+    >
+      Shop the Collection
+    </button>
   </div>
 
 </section>
+
 
 
 <!-- Why BiGH Section -->
@@ -67,7 +120,7 @@ onMounted(() => {
 
 
 <!-- Why We Age Section -->
-<section class="flex flex-col items-center px-6 py-24 bg-[url('/images/mito1.jpg')] bg-cover bg-center bg-no-repeat">
+<section class="flex flex-col items-center px-6 py-24 bg-[url('/images/whyage2.png')] bg-cover bg-center bg-no-repeat">
   <div class="max-w-3xl w-full text-left">
     <h2 class="text-5xl md:text-6xl font-bold text-white mb-10 leading-tight">
       Why Do We Age?
@@ -95,21 +148,25 @@ onMounted(() => {
 
 
 <!-- Science-Based Formulation Section -->
-<section class="w-full bg-white py-16 px-6 text-center">
-  <div class="max-w-4xl mx-auto">
+<section class="relative w-full bg-white py-16 px-6 text-center overflow-hidden">
+  <div id="particles-js" class="absolute inset-0 z-0"></div>
 
-
+  <div class="relative max-w-4xl mx-auto z-10">
     <h2 class="text-6xl md:text-7xl font-bold text-gray-900 mb-6">
       Science-Driven Formulation
     </h2>
     <p class="italic text-2xl md:text-2xl text-gray-700 leading-relaxed">
-      Our mitochondrial health supplements are meticulously formulated by real scientists and researchers 
-      who specialize in cellular biology, longevity, and bioenergetics. Each ingredient is backed by scientific 
-      research and chosen to support your body’s energy production, resilience, and healthy aging at the 
-      cellular level.
+      Our mitochondrial health supplements are meticulously formulated by real scientists and researchers who specialize in cellular biology, longevity, and bioenergetics. Each ingredient is backed by scientific research and chosen to support your body’s energy production, resilience, and healthy aging at the cellular level.
     </p>
   </div>
 </section>
+
+
+
+
+
+
+
 
 
 
