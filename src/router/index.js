@@ -3,12 +3,14 @@ import Home from '../views/Home.vue'
 import About from '../views/About.vue'
 import Home_KR from '../views/Home_KR.vue'
 import Home_VN from '../views/Home_VN.vue'
+import Mitochondria from '../views/Mitochondria.vue'
 
 const routes = [
   { path: '/', component: Home },
   { path: '/about', component: About },
   { path: '/home_kr', component: Home_KR },
   { path: '/home_vn', component: Home_VN },
+  { path: '/mitochondria', component: Mitochondria },
 ]
 
 const router = createRouter({
