@@ -43,16 +43,15 @@ import loginsignup_en from '../components/loginsignup_en.vue';
 
 
 <!-- Why BiGH Section -->
-<section class="flex flex-col md:flex-row items-center px-6 py-20 bg-white">
+<section class="flex flex-col md:flex-row items-center px-10 md:px-24 py-20 bg-white">
   <!-- Left Half - Text -->
   <div class="md:w-1/2 w-full md:pr-10">
     <p class="text-xl md:text-6xl font-medium text-gray-900 mb-6 text-left">
-      Introducing Mitochondria, Your Cellular Powerhouses.
+      Introducing Mitochondria
     </p>
     <p class="italic text-lg md:text-2xl text-gray-700 mb-4 text-left">
       Mitochondria are like batteries inside every cell of your body. They take nutrients and oxygen, turning them into the energy you need for every move, thought, and breath you take.
     </p>
-
   </div>
 
   <!-- Right Half - Image -->
@@ -76,7 +75,7 @@ import loginsignup_en from '../components/loginsignup_en.vue';
         The Mitochondria Theory of Aging
     </h2>
     <p class="italic text-2xl md:text-3xl text-white mb-15 leading-relaxed">
-        As we age, our mitochondria become less efficient. They produce less energy and more harmful byproducts like free radicals. This can lead to cellular damage, fatigue, and visible signs of aging.
+      As we age, these mitochondria become less efficient. They produce less energy and more harmful waste, which damages the cells around them. This makes our cells weaker, slower to repair, and more likely to stop working properly — leading to tiredness, slower recovery, and visible signs of aging.
     </p>
   </div>
 </section>
@@ -90,7 +89,7 @@ import loginsignup_en from '../components/loginsignup_en.vue';
       Energy, Vitality, Longevity—It All Depends On It
     </p>
     <p class="italic text-lg md:text-2xl text-gray-700 mb-4 text-left">
-      Lower mitochondrial energy affects everything—from your skin and muscles to your heart and brain.
+      These tiny powerhouses fuel everything your body does, from moving your muscles and keeping your heart beating to powering your brain and renewing your skin. But when they decline, everything slows down—your energy fades, your body struggles to repair, and the aging process speeds up.
 
     </p>
 
@@ -132,7 +131,7 @@ import loginsignup_en from '../components/loginsignup_en.vue';
       Our Solution to Mitochondrial Health
     </p>
     <p class="italic text-lg md:text-2xl text-gray-700 mb-4 text-left">
-      At BiGH, our approach to mitochondrial health is rooted in science. We deliver targeted nutrients that energize your mitochondria, shield them from free radical damage, and support your body’s natural ability to generate new, healthy mitochondria. These nutrients — often missing or underrepresented in a typical modern diet — help restore what aging and stress take away, supporting better energy, resilience, and longevity from the cellular level up.
+      At BiGH, our approach to mitochondrial health is rooted in science. We deliver targeted nutrients that power up your mitochondria, shield them from free radical damage, and support your body’s natural ability to generate new, healthy mitochondria. These nutrients — often missing or underrepresented in a typical modern diet — help restore what aging and stress take away, supporting better energy, resilience, and longevity from the cellular level up.
 
     </p>
 
