@@ -211,26 +211,33 @@ onMounted(() => {
 </section>
 
 
-  <!-- Highest Quality Ingredients Section -->
-  <section class="relative bg-white py-25 px-6 text-center overflow-hidden">
-    <img src="/images/bee1.png" alt="Bee" class="bee-animation bee-left absolute w-12 z-10 pointer-events-none" style="top: 50%; left: 5%; transform: translateY(-50%);" />
-    <img src="/images/bee1.png" alt="Bee" class="bee-animation bee-right absolute w-12 z-10 pointer-events-none" style="top: 50%; right: 5%; transform: translateY(-50%);" />
+<!-- Highest Quality Ingredients Section with Background Video -->
+<section class="relative py-24 px-6 text-center overflow-hidden text-white">
+  <!-- Background Video -->
+  <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover z-0">
+    <source src="/videos/nature1.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
 
-    <div class="max-w-4xl mx-auto relative z-20">
-      <h2 class="text-7xl md:text-6xl font-bold text-gray-900 mb-6">
-        Sourced from Nature’s Best
-      </h2>
-      <p class="italic text-3xl md:text-3xl text-gray-700 leading-relaxed">
-        We believe that quality starts at the source. That’s why we go the extra mile to find ingredients 
-        from regions around the world where they grow best — in their most natural, nutrient-rich form.
-      </p>
-      <p class="italic mt-6 text-3xl md:text-3xl text-gray-600 leading-relaxed">
-        For example, we use <strong>Deer Horn Shaped Reishi</strong> from the pristine forests of 
-        <strong>Hokkaido, Japan</strong> and <strong>Green Bee Propolis</strong> from the lush rainforests of <strong>Brazil</strong>, 
-        both chosen for their unmatched purity and potency.
-      </p>
-    </div>
-  </section>
+  <!-- Content -->
+  <div class="max-w-4xl mx-auto relative z-10 p-10">
+    <h2 class="text-5xl md:text-6xl font-bold mb-6 drop-shadow-lg">
+      Sourced from Nature’s Best
+    </h2>
+    <p class="italic text-2xl md:text-3xl leading-relaxed drop-shadow-md">
+      We believe that quality starts at the source. That’s why we go the extra mile to find ingredients 
+      from regions around the world where they grow best — in their most natural, nutrient-rich form.
+    </p>
+    <p class="italic mt-6 text-2xl md:text-3xl leading-relaxed drop-shadow-md">
+      For example, we use <strong>Deer Horn Shaped Reishi</strong> from the pristine forests of 
+      <strong>Hokkaido, Japan</strong> and <strong>Green Bee Propolis</strong> from the lush rainforests of <strong>Brazil</strong>, 
+      both chosen for their unmatched purity and potency.
+    </p>
+  </div>
+</section>
+
+
+
 
 
 
