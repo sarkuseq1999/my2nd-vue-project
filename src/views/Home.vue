@@ -211,13 +211,15 @@ onMounted(() => {
 </section>
 
 
-<!-- Highest Quality Ingredients Section with Background Video -->
+<!-- Highest Quality Ingredients Section with Background Video and Opacity -->
 <section class="relative py-24 px-6 text-center overflow-hidden text-white">
-  <!-- Background Video -->
-  <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover z-0">
-    <source src="/videos/nature1.mp4" type="video/mp4" />
-    Your browser does not support the video tag.
-  </video>
+  <!-- Background Video Wrapper with Opacity -->
+  <div class="absolute top-0 left-0 w-full h-full z-0 opacity-80">
+    <video autoplay muted loop playsinline class="w-full h-full object-cover">
+      <source src="/videos/nature1.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
 
   <!-- Content -->
   <div class="max-w-4xl mx-auto relative z-10 p-10">
@@ -235,6 +237,7 @@ onMounted(() => {
     </p>
   </div>
 </section>
+
 
 
 
