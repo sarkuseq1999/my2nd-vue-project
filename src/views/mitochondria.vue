@@ -34,14 +34,9 @@ import loginsignup_en from '../components/loginsignup_en.vue';
 
 <!-- Hero Content Inside Video -->
 <div class="relative w-1/3 ml-12 mt-80 text-left z-10">
-  <h1 ref="bighText" class="text-5xl font-bold text-white">Why We Age—and How You Can Fight Back at the Cellular Level</h1>
-  <p class="mt-2 text-2xl text-white">Aging starts before you see it. It begins deep within your cells, where weakened mitochondria drain your energy and slow your body's ability to repair itself.</p>
-  <button
-    @click="scrollToProducts"
-    class="my-5 px-6 py-3 text-white border border-white bg-transparent text-lg font-semibold rounded-2xl hover:bg-white hover:text-black transition duration-300"
-  >
-    Shop the Collection
-  </button>
+  <h1 ref="bighText" class="text-5xl font-bold text-white">What Is Aging?</h1>
+  <p class="mt-2 text-2xl text-white">Aging isn’t just about wrinkles or gray hair. It begins deep within your cells, where weakened mitochondria drain your energy and slow your body's ability to repair itself, leaving you feeling tired and more vulnerable over time.</p>
+
 </div>
 
 </section>
@@ -52,7 +47,7 @@ import loginsignup_en from '../components/loginsignup_en.vue';
   <!-- Left Half - Text -->
   <div class="md:w-1/2 w-full md:pr-10">
     <p class="text-xl md:text-6xl font-medium text-gray-900 mb-6 text-left">
-      Meet Your Mitochondria—Your Cellular Powerhouses.
+      Introducing Mitochondria, Your Cellular Powerhouses.
     </p>
     <p class="italic text-lg md:text-2xl text-gray-700 mb-4 text-left">
       Mitochondria are like batteries inside every cell of your body. They take nutrients and oxygen, turning them into the energy you need for every move, thought, and breath you take.
@@ -78,14 +73,76 @@ import loginsignup_en from '../components/loginsignup_en.vue';
   <!-- Content -->
   <div class="relative max-w-3xl w-full text-left z-10">
     <h2 class="text-5xl md:text-6xl font-bold text-white mb-10 leading-tight">
-        When Mitochondria Slow Down, So Do We!
+        The Mitochondria Theory of Aging
     </h2>
     <p class="italic text-2xl md:text-3xl text-white mb-15 leading-relaxed">
-        As we age, our mitochondria get tired. They make less energy and produce more harmful waste. This makes us feel tired, age faster, and become more vulnerable to health problems.
+        As we age, our mitochondria become less efficient. They produce less energy and more harmful byproducts like free radicals. This can lead to cellular damage, fatigue, and visible signs of aging.
     </p>
   </div>
 </section>
 
+
+<!-- Why Why It Matters -->
+<section class="flex flex-col md:flex-row items-center px-6 py-20 bg-white">
+  <!-- Left Half - Text -->
+  <div class="md:w-1/2 w-full md:pr-10">
+    <p class="text-xl md:text-6xl font-medium text-gray-900 mb-6 text-left">
+      Energy, Vitality, Longevity—It All Depends On It
+    </p>
+    <p class="italic text-lg md:text-2xl text-gray-700 mb-4 text-left">
+      Lower mitochondrial energy affects everything—from your skin and muscles to your heart and brain.
+
+    </p>
+
+  </div>
+
+  <!-- Right Half - Image -->
+  <div class="md:w-1/2 w-full mt-10 md:mt-0 flex justify-center">
+    <img src="/images/mitoplant1.png" alt="Mitochondria Plant" class="max-w-full h-auto" />
+  </div>
+</section>
+
+
+
+
+
+<!-- Why We Age Section -->
+<section class="relative flex flex-col items-center px-6 py-24 bg-cover bg-center bg-no-repeat" style="background-image: url('/images/mitoaging2.jpg');">
+  
+  <!-- Overlay for background opacity -->
+  <div class="absolute inset-0 bg-black opacity-40 z-0"></div>
+
+  <!-- Content -->
+  <div class="relative max-w-3xl w-full text-left z-10">
+    <h2 class="text-5xl md:text-6xl font-bold text-white mb-10 leading-tight">
+      How To Protect Your Mitochondria?
+    </h2>
+    <p class="italic text-2xl md:text-3xl text-white mb-15 leading-relaxed">
+      Supporting healthy mitochondria starts with everyday choices—like staying active, getting deep, restful sleep, eating a nutrient-rich diet, and selecting supplements based on scientific evidence. These habits work together to keep your cellular engines running strong, fueling your energy and vitality from within.
+    </p>
+  </div>
+</section>
+
+
+<!-- Why Why It Matters -->
+<section class="flex flex-col md:flex-row items-center px-6 py-20 bg-white">
+  <!-- Left Half - Text -->
+  <div class="md:w-1/2 w-full md:pr-10">
+    <p class="text-xl md:text-6xl font-medium text-gray-900 mb-6 text-left">
+      Our Solution to Mitochondrial Health
+    </p>
+    <p class="italic text-lg md:text-2xl text-gray-700 mb-4 text-left">
+      At BiGH, our approach to mitochondrial health is rooted in science. We deliver targeted nutrients that energize your mitochondria, shield them from free radical damage, and support your body’s natural ability to generate new, healthy mitochondria. These nutrients — often missing or underrepresented in a typical modern diet — help restore what aging and stress take away, supporting better energy, resilience, and longevity from the cellular level up.
+
+    </p>
+
+  </div>
+
+  <!-- Right Half - Image -->
+  <div class="md:w-1/2 w-full mt-10 md:mt-0 flex justify-center">
+    <img src="/images/mitoplant1.png" alt="Mitochondria Plant" class="max-w-full h-auto" />
+  </div>
+</section>
 
 
 
