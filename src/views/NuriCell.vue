@@ -1,17 +1,16 @@
 <script setup>
 import NavBar from '../components/NavBar.vue';
-import loginsignup_en from '../components/loginsignup_en.vue';
 </script>
 
 <template>
-  <!-- Absolute Container for Navbar & LoginSignup -->
-  <div class="relative top-0 left-0 w-full z-20">
-    <loginsignup_en />
-    <NavBar />
-  </div>
+  <!-- Login/Signup stays above everything -->
+  <loginsignup_en />
 
   <!-- Video Background Container -->
   <div class="relative w-full text-white overflow-hidden min-h-[700px]">
+    <!-- NavBar is now part of this section -->
+    <NavBar />
+
     <!-- Background Video -->
     <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover z-0">
       <source src="/videos/nuricell_bg_wave2.mp4" type="video/mp4" />
@@ -125,5 +124,6 @@ export default {
   }
 };
 </script>
+
 
 
