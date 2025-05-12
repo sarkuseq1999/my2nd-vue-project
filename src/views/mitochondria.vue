@@ -148,24 +148,20 @@ import loginsignup_en from '../components/loginsignup_en.vue';
 
 
 <!-- Why Why It Matters -->
-<section class="flex flex-col md:flex-row items-center px-6 py-20 bg-white">
+<section class="flex flex-col md:flex-row items-center px-6 py-20 bg-[url('/images/solution1.jpg')] bg-cover bg-center bg-no-repeat min-h-[800px]">
   <!-- Left Half - Text -->
   <div class="md:w-1/2 w-full md:pr-10">
-    <p class="text-xl md:text-6xl font-medium text-gray-900 mb-6 text-left">
+    <p class="text-xl md:text-6xl font-medium text-white mb-6 text-left">
       Our Solution to Mitochondrial Health
     </p>
-    <p class="italic text-lg md:text-2xl text-gray-700 mb-4 text-left">
+    <p class="italic text-lg md:text-2xl text-white mb-4 text-left">
       At BiGH, our approach to mitochondrial health is rooted in science. We deliver targeted nutrients that power up your mitochondria, shield them from free radical damage, and support your body’s natural ability to generate new, healthy mitochondria. These nutrients — often missing or underrepresented in a typical modern diet — help restore what aging and stress take away, supporting better energy, resilience, and longevity from the cellular level up.
-
     </p>
-
-  </div>
-
-  <!-- Right Half - Image -->
-  <div class="md:w-1/2 w-full mt-10 md:mt-0 flex justify-center">
-    <img src="/images/mitoplant1.png" alt="Mitochondria Plant" class="max-w-full h-auto" />
   </div>
 </section>
+
+
+
 
 
 
