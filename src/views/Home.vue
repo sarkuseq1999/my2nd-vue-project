@@ -78,25 +78,10 @@ import NavBar from '../components/NavBar.vue';
     </div>
   </section>
 
-  <!-- Science-Based Formulation Section -->
-  <section class="relative w-full bg-white py-30 px-6 text-center overflow-hidden">
-    <div class="relative max-w-4xl mx-auto z-20">
-      <h2 class="text-6xl md:text-7xl font-bold text-gray-900 mb-6">
-        Science-Driven Formulation
-      </h2>
-      <p class="italic text-3xl md:text-3xl text-gray-700 leading-relaxed">
-        Our mitochondrial health supplements are meticulously formulated by real scientists and researchers who specialize in cellular biology, longevity, and bioenergetics. Each ingredient is backed by scientific research and chosen to support your body’s energy production, resilience, and healthy aging at the cellular level.
-      </p>
-    </div>
-  </section>
 
-  <!-- Made in California and GMP Certified -->
-  <section class="flex flex-wrap w-full">
-    <div class="w-1/2 aspect-square bg-cover bg-center" style="background-image: url('/images/madeincalifornia.jpg');"></div>
-    <div class="w-1/2 aspect-square bg-cover bg-center" style="background-image: url('/images/gmpcertified2.jpg');"></div>
-  </section>
 
-  <!-- Highest Quality Ingredients Section with Background Video -->
+
+    <!-- Highest Quality Ingredients Section with Background Video -->
   <section class="relative py-24 px-6 text-center overflow-hidden text-white">
     <!-- Background Video Wrapper with Opacity -->
     <div class="absolute top-0 left-0 w-full h-full z-0 opacity-80">
@@ -123,8 +108,29 @@ import NavBar from '../components/NavBar.vue';
     </div>
   </section>
 
+
+
+
+  <!-- Made in California and GMP Certified -->
+  <section class="flex flex-wrap w-full">
+    <div class="w-1/2 aspect-square bg-cover bg-center" style="background-image: url('/images/madeincalifornia.jpg');"></div>
+    <div class="w-1/2 aspect-square bg-cover bg-center" style="background-image: url('/images/gmpcertified2.jpg');"></div>
+  </section>
+
+  <!-- Science-Based Formulation Section -->
+  <section class="relative w-full bg-white py-30 px-6 text-center overflow-hidden">
+    <div class="relative max-w-4xl mx-auto z-20">
+      <h2 class="text-6xl md:text-7xl font-bold text-gray-900 mb-6">
+        Science-Driven Formulation
+      </h2>
+      <p class="italic text-3xl md:text-3xl text-gray-700 leading-relaxed">
+        Our mitochondrial health supplements are meticulously formulated by real scientists and researchers who specialize in cellular biology, longevity, and bioenergetics. Each ingredient is backed by scientific research and chosen to support your body’s energy production, resilience, and healthy aging at the cellular level.
+      </p>
+    </div>
+  </section>
+
   <!-- 22 Years of Excellence Section -->
-  <section class="relative z-10 flex items-center justify-center h-[500px] bg-cover bg-center bg-no-repeat" style="background-image: url('/images/22yrs.jpg');">
+  <section class="relative z-10 flex items-center justify-center h-[500px] bg-cover bg-center bg-no-repeat" style="background-image: url('/images/22yrs_3.jpg');">
     <div class="absolute inset-0 bg-black opacity-20"></div>
     <div class="relative z-10 flex flex-col md:flex-row w-full h-full px-6 md:px-12">
       <div class="md:w-1/2"></div>
