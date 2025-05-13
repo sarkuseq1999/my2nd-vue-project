@@ -6,9 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BiGH</title>
   </head>
-  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <body>
+    <!-- Vue App Mount Point -->
     <div id="app"></div>
+
+    <!-- Load Your Vue App -->
     <script type="module" src="/src/main.js"></script>
+
+    <!-- Load particles.js from CDN -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <!-- Initialize particles.js after Vue has mounted -->
+    <script>
+      setTimeout(() => {
+        const container = document.getElementById('particles-js');
+        if (container && window.particlesJS) {
+          particlesJS('particles-js', {
+            particles: {
+              number: { value: 50 },
+              color: { value: '#333333' },
+              shape: { type: 'circle' },
+              opacity: { value: 0.4 },
+              size: { value: 3 },
+              line_linked: {
+                enable: true,
+                distance: 150,
+                color: '#a0aec0',
+                opacity: 0.4,
+                width: 1
+              },
+              move: {
+                enable: true,
+                speed: 1.5,
+                direction: 'none',
+                out_mode: 'out'
+              }
+            },
+            interactivity: {
+              detect_on: 'canvas',
+              events: {
+                onhover: { enable: true, mode: 'repulse' },
+                onclick: { enable: true, mode: 'push' }
+              },
+              modes: {
+                repulse: { distance: 100 },
+                push: { particles_nb: 4 }
+              }
+            },
+            retina_detect: true
+          });
+        }
+      }, 500); // Delay to ensure Vue renders first
+    </script>
   </body>
 </html>
+
