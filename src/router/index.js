@@ -5,6 +5,7 @@ import Home_KR from '../views/Home_KR.vue'
 import Home_VN from '../views/Home_VN.vue'
 import Mitochondria from '../views/Mitochondria.vue'
 import NuriCell from '../views/NuriCell.vue' // 👈 Import your component
+import Support from '../views/Support.vue'
 
 const routes = [
   { path: '/', component: Home },
@@ -12,7 +13,8 @@ const routes = [
   { path: '/home_kr', component: Home_KR },
   { path: '/home_vn', component: Home_VN },
   { path: '/mitochondria', component: Mitochondria },
-  { path: '/nuricell', component: NuriCell }, // 👈 Add your route
+  { path: '/nuricell', component: NuriCell },
+  { path: '/support', component: Support }, // 👈 Add your route
 ]
 
 const router = createRouter({

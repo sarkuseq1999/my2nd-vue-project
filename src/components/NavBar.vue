@@ -48,7 +48,7 @@ const toggleMobileMenu = () => {
           <button class="text-white font-bold hover:text-yellow-400 transition-colors">Products</button>
         </li>
         <li><router-link to="/about" class="text-white font-bold hover:text-yellow-400 transition-colors">About</router-link></li>
-        <li><a href="#" class="text-white font-bold hover:text-yellow-400 transition-colors">Support</a></li>
+        <li><router-link to="/support" class="text-white font-bold hover:text-yellow-400 transition-colors">Support</router-link></li>
       </ul>
 
       <!-- Center: Logo -->
