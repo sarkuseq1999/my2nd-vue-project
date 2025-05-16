@@ -1,13 +1,16 @@
 <script setup>
 import NavBar from '../components/NavBar.vue'
-
-import { onMounted } from 'vue'
+import { onMounted, onBeforeUnmount, ref } from 'vue'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 gsap.registerPlugin(ScrollTrigger)
 
+let vantaEffect = null
+const excellenceSection = ref(null)
+
 onMounted(() => {
+  // GSAP Animations
   gsap.from('.hero-title', {
     y: 50,
     opacity: 0,
@@ -68,8 +71,25 @@ onMounted(() => {
     delay: 0.4,
     ease: 'power3.out'
   })
+
+  // Vanta RINGS Animation
+  if (typeof VANTA !== 'undefined' && VANTA.BIRDS) {
+    vantaEffect = VANTA.BIRDS({
+      el: excellenceSection.value,
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00
+    })
+  }
 })
 
+onBeforeUnmount(() => {
+  if (vantaEffect) vantaEffect.destroy()
+})
 </script>
 
 <template>
@@ -89,40 +109,37 @@ onMounted(() => {
       Your browser does not support the video tag.
     </video>
 
-   <!-- Hero Content -->
-<div class="relative w-full md:w-1/3 mt-40 md:mt-60 px-20 md:px-0 md:ml-12 text-center md:text-left z-10">
-  <h1 class="hero-title text-4xl md:text-5xl font-bold text-white">
-    Recharge Your Cells. Restore Your Youth.
-  </h1>
-  <p class="hero-paragraph mt-2 text-xl md:text-2xl text-white">
-    Support your body at its core -- your mitochondria -- to boost energy, slow aging, and enjoy life.
-  </p>
-  <button
-    @click="scrollToProducts"
-    class="hero-button my-5 px-6 py-3 text-white border border-white bg-transparent text-lg font-semibold rounded-2xl hover:bg-white hover:text-black transition duration-300"
-  >
-    Shop the Collection
-  </button>
-</div>
-
+    <!-- Hero Content -->
+    <div class="relative w-full md:w-1/3 mt-40 md:mt-60 px-20 md:px-0 md:ml-12 text-center md:text-left z-10">
+      <h1 class="hero-title text-4xl md:text-5xl font-bold text-white">
+        Recharge Your Cells. Restore Your Youth.
+      </h1>
+      <p class="hero-paragraph mt-2 text-xl md:text-2xl text-white">
+        Support your body at its core -- your mitochondria -- to boost energy, slow aging, and enjoy life.
+      </p>
+      <button
+        @click="scrollToProducts"
+        class="hero-button my-5 px-6 py-3 text-white border border-white bg-transparent text-lg font-semibold rounded-2xl hover:bg-white hover:text-black transition duration-300"
+      >
+        Shop the Collection
+      </button>
+    </div>
   </section>
 
-<!-- Why BiGH Section -->
-<section class="flex flex-col items-center px-6 py-20 bg-white">
-  <p class="bigh-quote max-w-2xl text-xl md:text-6xl font-medium text-gray-900 mb-6 text-left">
-    “We believe healthy aging starts deep inside—where energy is made and damage begins.”
-  </p>
-  <p class="bigh-paragraph italic max-w-2xl text-lg md:text-2xl text-gray-700 mb-4 text-left">
-    Our products target the real source of aging: your cells' ability to function, repair, and thrive. By restoring mitochondrial health and shielding against daily damage, we help you live younger, longer.
-  </p>
-
-  <div class="bigh-button max-w-2xl w-full text-center">
-    <button class="mt-8 px-8 py-3 text-lg font-semibold text-black bg-white border border-black rounded-2xl shadow hover:bg-gray-100 transition duration-300">
-      Learn More About BiGH
-    </button>
-  </div>
-</section>
-
+  <!-- Why BiGH Section -->
+  <section class="flex flex-col items-center px-6 py-20 bg-white">
+    <p class="bigh-quote max-w-2xl text-xl md:text-6xl font-medium text-gray-900 mb-6 text-left">
+      “We believe healthy aging starts deep inside—where energy is made and damage begins.”
+    </p>
+    <p class="bigh-paragraph italic max-w-2xl text-lg md:text-2xl text-gray-700 mb-4 text-left">
+      Our products target the real source of aging: your cells' ability to function, repair, and thrive. By restoring mitochondrial health and shielding against daily damage, we help you live younger, longer.
+    </p>
+    <div class="bigh-button max-w-2xl w-full text-center">
+      <button class="mt-8 px-8 py-3 text-lg font-semibold text-black bg-white border border-black rounded-2xl shadow hover:bg-gray-100 transition duration-300">
+        Learn More About BiGH
+      </button>
+    </div>
+  </section>
 
   <!-- Why We Age Section -->
   <section class="flex flex-col items-center px-6 py-24 bg-[url('/images/whyage2.png')] bg-cover bg-center bg-no-repeat">
@@ -145,13 +162,9 @@ onMounted(() => {
     </div>
   </section>
 
-  <!-- Science-Based Formulation Section with Particles -->
+  <!-- Science-Based Formulation Section -->
   <section class="relative w-full bg-white py-30 px-6 text-center overflow-hidden">
-    <!-- Particle Background -->
     <div id="particles-js" class="absolute inset-0 w-full h-full z-0"></div>
-
-
-    <!-- Main Content -->
     <div class="relative max-w-4xl mx-auto z-20">
       <h2 class="text-6xl md:text-7xl font-bold text-gray-900 mb-6">
         Science-Driven Formulation
@@ -201,17 +214,30 @@ onMounted(() => {
     </div>
   </section>
 
-  <!-- 22 Years of Excellence Section -->
-  <section class="relative z-10 flex items-center justify-center h-[500px] bg-cover bg-center bg-no-repeat" style="background-image: url('/images/celebration5.jpg');">
-    <div class="absolute inset-0 z-0"></div>
-    <div class="relative z-10 text-center text-white max-w-3xl space-y-4 px-8 sm:px-12 md:px-16 mt-10">
-      <h1 class="text-5xl font-bold text-white">22 Years of Excellence</h1>
-      <p class="text-2xl text-white">
-        For 22 years, our products have enriched lives with unmatched quality and reliability from all over the world. Join the thousands who trust us!
+<!-- 22 Years of Excellence Section with Vanta and dark overlay -->
+<section
+  ref="excellenceSection"
+  class="relative z-10 flex items-center justify-center h-[500px]"
+>
+  <!-- Dark semi-transparent overlay ABOVE the Vanta canvas but BELOW the content -->
+  <div class="absolute inset-0 bg-black/20 z-0"></div>
+
+  <!-- Centered Content Container -->
+  <div class="relative z-10 max-w-3xl h-full flex items-center justify-center px-8 md:px-16">
+    <div class="text-center text-white space-y-4">
+      <h1 class="text-5xl font-bold">22 Years of Excellence</h1>
+      <p class="text-2xl">
+        For 22 years, our products have enriched lives with unmatched quality and reliability from all over the world. Join the hundreds of thousands who trust us!
       </p>
     </div>
-  </section>
+  </div>
+</section>
+
+
+
+
 </template>
+
 
 
 
