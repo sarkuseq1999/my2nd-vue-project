@@ -129,7 +129,7 @@ onBeforeUnmount(() => {
   <!-- Why BiGH Section -->
   <section class="flex flex-col items-center px-6 py-20 bg-white">
     <p class="bigh-quote max-w-2xl text-xl md:text-6xl font-medium text-gray-900 mb-6 text-left">
-      “We believe healthy aging starts deep inside—where energy is made and damage begins.”
+      "We believe healthy aging starts deep inside—where energy is made and damage begins."
     </p>
     <p class="bigh-paragraph italic max-w-2xl text-lg md:text-2xl text-gray-700 mb-4 text-left">
       Our products target the real source of aging: your cells' ability to function, repair, and thrive. By restoring mitochondrial health and shielding against daily damage, we help you live younger, longer.
