@@ -58,11 +58,11 @@ import NavBar from '../components/NavBar.vue';
       Your browser does not support the video tag.
     </video>
     <div class="absolute inset-0 bg-black opacity-40 z-0"></div>
-    <div class="relative max-w-3xl w-full text-left z-10">
-      <h2 class="text-5xl md:text-6xl font-bold text-white mb-10 leading-tight">
+    <div class="relative max-w-3xl w-full text-center z-10">
+      <h2 class="text-5xl md:text-6xl font-bold text-white mb-10 leading-tight text-center">
         The Mitochondria Theory of Aging
       </h2>
-      <p class="italic text-2xl md:text-3xl text-white mb-15 leading-relaxed">
+      <p class="italic text-2xl md:text-3xl text-white mb-15 leading-relaxed text-center mx-auto">
         As we age, these mitochondria become less efficient. They produce less energy and more harmful waste, 
         which damages the cells around them. This makes our cells weaker, slower to repair, and more likely 
         to stop working properly — leading to tiredness, slower recovery, and visible signs of aging.

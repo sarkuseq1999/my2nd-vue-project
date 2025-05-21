@@ -143,12 +143,12 @@ onBeforeUnmount(() => {
 
   <!-- Why We Age Section -->
   <section class="flex flex-col items-center px-6 py-24 bg-[url('/images/whyage2.png')] bg-cover bg-center bg-no-repeat">
-    <div class="max-w-3xl w-full text-left">
+    <div class="max-w-3xl w-full text-center">
       <h2 class="text-5xl md:text-6xl font-bold text-white mb-10 leading-tight">
         Why Do We Age?
       </h2>
       <p class="italic text-2xl md:text-3xl text-white mb-15 leading-relaxed">
-        Aging is a natural process — but scientists now believe it’s not just about time. At the cellular level, aging happens when our cells can no longer function, repair, or protect themselves the way they used to.
+        Aging is a natural process — but scientists now believe it's not just about time. At the cellular level, aging happens when our cells can no longer function, repair, or protect themselves the way they used to.
       </p>
       <h3 class="text-5xl font-bold text-white mb-6">
         The Mitochondrial Theory of Aging
@@ -156,7 +156,7 @@ onBeforeUnmount(() => {
       <p class="italic text-2xl md:text-3xl text-white mb-10 leading-relaxed">
         Mitochondria are the power plants inside your cells. They make the energy that keeps you alive and active. But over time, mitochondria get damaged by stress, toxins, and everyday wear — leading to lower energy and more cell breakdown.
       </p>
-      <button class="px-10 py-4 text-xl font-semibold text-white border border-white bg-transparent rounded-2xl hover:bg-white hover:text-black transition duration-300">
+      <button class="mx-auto px-10 py-4 text-xl font-semibold text-white border border-white bg-transparent rounded-2xl hover:bg-white hover:text-black transition duration-300">
         Learn More
       </button>
     </div>

@@ -95,7 +95,7 @@ onBeforeUnmount(() => {
   ref="missionSectionRef"
   class="relative w-full min-h-screen text-black overflow-hidden flex items-center justify-center px-4"
 >
-  <div class="relative z-10 flex flex-col items-center text-center px-6 py-20 max-w-3xl w-full space-y-6 bg-white/80 backdrop-blur-md rounded-2xl">
+  <div class="relative z-10 flex flex-col items-center text-center px-6 py-20 max-w-3xl w-full space-y-6 bg-white/20 backdrop-blur-md rounded-2xl">
     <h2 class="text-4xl md:text-6xl font-bold">
       Our Mission
     </h2>
