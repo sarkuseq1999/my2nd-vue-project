@@ -112,7 +112,7 @@ onBeforeUnmount(() => {
     <!-- Hero Content -->
     <div class="relative w-full md:w-1/3 mt-40 md:mt-60 px-20 md:px-0 md:ml-12 text-center md:text-center z-10">
       <h1 class="hero-title text-4xl md:text-5xl font-bold text-white">
-        Testing - Recharge Your Cells. Restore Youth.
+        Testing2 - Recharge Your Cells. Restore Youth.
       </h1>
       <p class="hero-paragraph mt-2 text-xl md:text-2xl text-white">
         Support your body at its core -- your mitochondria -- to boost energy, slow aging, and enjoy life.
